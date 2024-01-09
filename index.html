@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body{
+            background-color: aqua;
+          }
+
+        .container{
+            height: 200px;
+            background-image: radial-gradient(white,blue);
+            text-align: center;
+            border: 2px solid black;
+            width: 250px;
+           margin-left: 120vh;
+           margin-top: -70vh;
+           position: absolute;
+           display: inline-block;
+           z-index: 1;
+        }
+
+        .container>p{
+            font-size: 20px;
+            margin-top: 60px;
+            font-weight: 700;
+        }
+
+       #t1:checked~.container{
+        transform: rotate(50deg);
+       }
+
+       #t2:checked~.container{
+        transform: rotate(80deg);
+       }
+
+       #t3:checked~.container{
+        transform: rotateX(30deg);
+       }
+       #t4:checked~.container{
+        transform: rotateX(150deg);
+       }
+       #t5:checked~.container{
+        transform: rotateY(250deg);
+       }
+       #t6:checked~.container{
+        transform: rotateY(80deg);
+       }
+
+       #t7:checked~.container{
+        Transform: skew(20deg,20deg);
+       }
+
+       #t8:checked~.container{
+        transform: skew(40deg,40deg);
+       }
+
+       #t9:checked~.container{
+        transform: skewX(80deg);
+       }
+
+       #t10:checked~.container{
+        transform: skewX(40deg);
+       }
+
+       #t11:checked~.container{
+        transform: skewY(150deg);
+       }
+
+       #t12:checked~.container{
+        transform: translate(20px,10px);
+       }
+
+       #t13:checked~.container{
+        transform: scale(2,2);
+       }
+
+       #t14:checked~.container{
+        transform:matrix(0.866,0.7,-0.8,0.866,0,0);
+       }
+
+       #t15:checked~.container{
+        transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+       }
+
+       input, label{
+        font-size: 15px;
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: aquamarine;
+        margin-top: 25px;
+        margin-top: ;
+       }
+    </style>
+</head>
+<body>
+    
+       <h2>Demo of the different values of the transform property.</h2>
+       <h4>Click the property values below to see the result:</h4>
+        <input type="radio" id="t1" value="rotate" name="transform" style="margin-top: -20px;">
+        <label for="t1">Transform: rotate(50deg)</label><br>
+        <input  type="radio" id="t2" value="rotate2" name="transform">
+        <label for="t2">Transform: rotate(80deg)</label><br>
+        <input type="radio" id="t3" value="rotate3" name="transform">
+        <label for="t3">Transform: rotateX(30deg)</label><br>
+        <input type="radio" id="t4" value="rotate4" name="transform">
+        <label for="t4">Transform: rotateX(150deg)</label><br>
+        <input type="radio" id="t5" value="rotate5" name="transform">
+        <label for="t5">Transform: rotateY(250deg)</label><br>
+        <input type="radio" id="t6" value="rotate6" name="transform">
+        <label for="t6">Transform: rotateY(250deg)</label><br>
+        <input type="radio" id="t7" value="rotate7" name="transform">
+        <label for="t7">Transform: skew(20deg,20deg);</label><br>
+        <input type="radio" id="t8" value="rotate8" name="transform">
+        <label for="t8">transform: skew(30deg,30deg);</label><br>
+        <input type="radio" id="t9" value="rotate9" name="transform">
+        <label for="t9">transform: skewX(30deg);</label><br>
+        <input type="radio" id="t10" value="rotate10" name="transform">
+        <label for="t10">transform: skewX(40deg);</label><br>
+        <input type="radio" id="t11" value="rotate11" name="transform">
+        <label for="t11">transform: skewY(150deg);</label><br>
+        <input type="radio" id="t12" value="rotate12" name="transform">
+        <label for="t12">transform: translate(20px,10px);</label><br>
+        <input type="radio" id="t13" value="rotate13" name="transform">
+        <label for="t13">transform: scale(2,2);</label><br>
+        <input type="radio" id="t14" value="rotate14" name="transform">
+        <label for="t14">transform:matrix(0.866,0.7,-0.8,0.866,0,0);</label><br>
+        <input type="radio" id="t15" value="rotate15" name="transform">
+        <label for="t15">transform: matrix(0.586,0.8,-0.8,0.586,40,30);</label><br>
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+    <div class="container" >
+        <p>This is the aftermath of the recent checked button.</p>
+    </div>
+</body>
+</html>
